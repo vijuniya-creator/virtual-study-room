@@ -3,7 +3,7 @@
 A distraction-free online study space designed to help students focus, manage time, and improve productivity.
 
 ## 🚀 Live Demo
-👉 https://yourusername.github.io/virtual-study-room/
+👉  https://vijuniya-creator.github.io/virtual-study-room/
 
 
 ## ✨ Features
