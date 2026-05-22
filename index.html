@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Study Room</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- RAIN -->
+
+    <div class="bubbles">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+    <!-- GLOW -->
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+    <!-- MAIN APP -->
+
+    <div class="app">
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-panel">
+
+            <!-- HEADER -->
+
+            <div class="header">
+
+                <h1>🌙 Virtual Study Room</h1>
+
+                <div class="live-clock">
+                    10:45 PM
+                </div>
+
+            </div>
+
+            <!-- TIMER SECTION -->
+
+            <div class="timer-section">
+
+                <div class="timer">
+                    00:25:00
+                </div>
+
+                <!-- CUSTOM TIMER -->
+
+                <div class="custom-time">
+
+                    <input type="number"
+                           id="hoursInput"
+                           placeholder="Hours">
+
+                    <input type="number"
+                           id="minutesInput"
+                           placeholder="Minutes">
+
+                    <button id="setTimerBtn">
+                        Set Timer
+                    </button>
+
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div class="controls">
+
+                    <button id="startBtn">
+                        ▶ Start
+                    </button>
+
+                    <button id="pauseBtn">
+                        ⏸ Pause
+                    </button>
+
+                    <button id="resetBtn">
+                        ↻ Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+
+            <div class="stats-section">
+
+                <div class="stat-card">
+
+                    <h3 id="totalTasks">0</h3>
+
+                    <p>Total Tasks</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 id="completedTasks">0</h3>
+
+                    <p>Completed</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3 id="studySessions">0</h3>
+
+                    <p>Study Sessions</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="right-panel">
+
+            <!-- TASK SECTION -->
+
+            <div class="task-section">
+
+                <h2>📋 Study Tasks</h2>
+
+                <div class="task-input">
+
+                    <input type="text"
+                           id="taskInput"
+                           placeholder="Add study task">
+
+                    <button id="addTaskBtn">
+                        Add
+                    </button>
+
+                </div>
+
+                <div class="task-list"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BREAK POPUP -->
+
+    <div class="break-popup">
+
+        <div class="popup-content">
+
+            <h2>☕ Break Time!</h2>
+
+            <p>
+                Great job studying 🌙<br>
+                Drink water and relax for a few minutes.
+            </p>
+
+            <button id="closePopup">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ALARM -->
+
+    <audio id="alarmSound">
+
+        <source
+        src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
+        type="audio/ogg">
+
+    </audio>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
